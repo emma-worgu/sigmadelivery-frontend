@@ -14,7 +14,7 @@ import Flutter from './statefulComponent/Flutterwave';
 function App() {
   const[data, setData] = useState(false);
 
-  const date = 1632257696224 + 2592000000 + 2592000000;
+  const date = 1632257696224 + 2592000000 + 2592000000 + 2592000000;
   const now = Date.now();
 
   const onlineStatus = async () => {

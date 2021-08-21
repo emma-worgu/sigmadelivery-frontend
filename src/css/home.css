@@ -1,0 +1,268 @@
+/* :root{
+  margin: 20px;
+}; */
+
+.tr-div {
+  background-color: orangered;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 3em;
+  position: relative;
+  margin-top: -3em;
+}
+
+.tr-in {
+  width: 95%;
+  height: 4em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.tr-sub {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 15em;
+  height: 4em;
+  margin-left: 6.5px;
+  border-radius: 0;
+  border: none;
+  background-color: aqua;
+}
+
+.tr-head {
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  margin-left: 20px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.tr-head-div {
+  display: flex;
+  justify-content: center;
+}
+
+/* .err-div {
+  display: flex;
+  justify-content: center;
+} */
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: larger;
+  margin-top: 3em;
+  color: #00235A;
+  margin-bottom: 2em;
+}
+
+.what-we-do-txt {
+  border-bottom: 10px solid orangered;
+}
+
+.os-txt-head {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.home-body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.wwd-txt {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wwd-card {
+  box-shadow: 0 14px 28px rgb(0 0 0 / 15%), 0 10px 10px rgb(0 0 0 / 5%);
+  margin-right: 15px;
+}
+
+.wwd-img, .wwd-card-txt {
+  display: flex;
+  justify-content: center;
+  color: #00235A;
+}
+
+.os-do {
+  margin-top: 5em;
+}
+
+.os {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 9em;
+}
+
+.os-txt {
+  background-color: brown;
+  color: white;
+}
+
+.os-txt-p {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.os-txt-button {
+  background-color: orangered;
+  width: 8em;
+  height: 3em;
+  border: none;
+  border-radius: 0;
+  color: white;
+}
+
+.os-bt-div {
+  display: flex;
+  justify-content: center;
+}
+
+.os-img {
+  border: 20px;
+}
+
+.wcu1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10px;
+}
+
+.wcu2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+
+.wcu-icons {
+  border-top: 5px solid orangered;
+  border-bottom: 1px dashed grey;
+  border-right: 1px dashed grey;
+  border-left: 1px dashed grey;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.wcu-icons-img, .wcu-icons-txt {
+  display: flex;
+  justify-content: center;
+}
+
+.wcu-icons-img {
+  margin-top: 20px;
+}
+
+.wcu-icons-txt {
+  color: #00235A;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jbd {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+  box-shadow: 0 14px 28px rgb(0 0 0 / 15%), 0 10px 10px rgb(0 0 0 / 5%);
+}
+
+.jbd-hd {
+  display: flex;
+  justify-content: center;
+  color: #00235A;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.jbd-txt {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 740px) {
+  .wwd-txt {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .wwd-card {
+    margin-bottom: 30px;
+  }
+
+  .os {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin-top: 3em;
+  }
+
+  .os-bt-div {
+    padding-bottom: 1em;
+  }
+
+  .wcu1, .wcu2 {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .wcu-icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .jbd {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, 200px);
+    box-shadow: none;
+  }
+
+  .jbd-div {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 15%), 0 10px 10px rgb(0 0 0 / 5%);
+    margin-bottom: 35px;
+  }
+
+  .what-we-do {
+    font-size: initial;
+  }
+
+  .tr-div {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 0;
+  }
+
+  .tr-in {
+    width: 85%;
+  }
+
+  .tr-sub {
+    width: 85%;
+    margin-left: 0;
+    border-radius: 7px;
+  }
+
+  .tr-sub-div {
+    display: flex;
+    justify-content: center;
+  }
+}

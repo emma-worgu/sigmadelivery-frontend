@@ -1,0 +1,47 @@
+.nav-section {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 300px 2fr;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+.nav-ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  .nav-link {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    width: 7em;
+    height: 3em;
+    margin-top: 9px;
+    margin-left: -10%;
+  }
+
+  .nav-bt {
+    background-color: orangered;
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-mobile {
+    margin-left: -55%;
+  }
+}

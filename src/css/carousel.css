@@ -1,0 +1,14 @@
+.hero-txt {
+  /* display: flex;
+  justify-content: center; */
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  /* width: 379px; */
+  /* width: 450px;
+  height: 60px; */
+  color: white;
+  font-weight: 900;
+  font-size: 1.5em;
+}

@@ -1,0 +1,112 @@
+.contact-body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.con-hd {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: larger;
+  margin-top: 3em;
+  color: #00235A;
+  margin-bottom: 2em;
+}
+
+.con-txt {
+  border-bottom: 10px solid orangered;
+}
+
+.con-in {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 100px);
+  margin-top: 5em;
+}
+
+.con-stxt {
+  display: flex;
+  justify-content: center;
+}
+
+#message {
+  height: 100px;
+}
+
+#nm-id {
+  margin-left: 8%;
+}
+
+.con-int {
+  width: 50%;
+  height: 2.5em;
+  margin-left: 20px;
+  border-radius: 0;
+  outline: orangered;
+  border: 1px solid grey;
+}
+
+.con-in-div {
+  margin-bottom: 25px;
+}
+
+.label {
+  color: #00235A;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.con-mess {
+  margin-top: 35px;
+  margin-left: 11%;
+}
+
+.con-bt {
+  border-radius: 1px;
+  border: none;
+  height: 3em;
+  background-color: aqua;
+  width: auto;
+}
+
+.con-bt:hover {
+  background-color: #00235A;
+}
+
+/* For Smaller Devices */
+@media screen and (max-width: 740px) {
+  .con-hd {
+    font-size: initial;
+  }
+
+  .con-in {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    margin-top: 1em;
+  }
+
+  .con-int {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .label {
+    margin-bottom: 25px;
+    font-size: larger;
+    font-weight: 500;
+  } 
+
+  .con-mess {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .con-h4 {
+    line-height: 2em;
+  }
+
+  #nm-id {
+    margin-left: 0;
+  }
+}

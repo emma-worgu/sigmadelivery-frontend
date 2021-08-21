@@ -1,0 +1,24 @@
+.tr-body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.shd {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: larger;
+  margin-top: 3em;
+  color: #00235A;
+  margin-bottom: 2em;
+}
+
+.shd-txt {
+  border-bottom: 10px solid orangered;
+}
+
+@media screen and (max-width: 740px) {
+  .shd {
+    font-size: initial;
+  }
+}

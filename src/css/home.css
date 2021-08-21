@@ -195,6 +195,12 @@
 }
 
 @media screen and (max-width: 740px) {
+
+  .home-body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .wwd-txt {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -264,5 +270,9 @@
   .tr-sub-div {
     display: flex;
     justify-content: center;
+  }
+
+  .os-txt-head {
+    margin-left: 30px;
   }
 }

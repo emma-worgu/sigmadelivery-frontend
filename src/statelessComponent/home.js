@@ -76,7 +76,7 @@ const HomePage = ({ trackNumber, message, onTrackNumber, onSubmit, loading }) =>
             <div className="os-txt-head">
               <h3>Quailty Without Questions</h3>
             </div>
-            <p className="os-txt-p">Looking for the logistics company you can trust. Look no further because DELIVERY is here to serve you.</p>
+            <p className="os-txt-p">Looking for the logistics company you can trust. Look no further because SIGMA LOGISTICS is here to serve you.</p>
             <div className="os-bt-div">
               <button className="os-txt-button"><b>GET QUOTE</b></button>
             </div>

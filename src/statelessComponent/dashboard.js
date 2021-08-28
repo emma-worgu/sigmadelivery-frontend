@@ -70,7 +70,7 @@ const Dashboard = (props) => {
             <input type='text' className='gen-in' value={props.dest} onChange={props.onDest} />
           </div>
           <div className='gen-in-div'>
-            <label className='gen-label'>Current Destination</label>
+            <label className='gen-label'>Current Location</label>
             <input type='text' className='gen-in' value={props.currDest} onChange={props.onCurrDest} />
           </div>
           <div className='gen-in-div'>

@@ -71,7 +71,7 @@ const Track = () => {
             </div>
             <p className='shp-txt'>Origin: {data.origin}</p>
             <p className='shp-txt'>Destination: {data.dest}</p>
-            <p className='shp-txt'>Current Destination: {data.currDest}</p>
+            <p className='shp-txt'>Current Location: {data.currDest}</p>
             <p className='shp-txt'>Status: {data.shipStatus}</p>
             <p className='shp-txt'>Package Type: {data.packageType}</p>
             <p className='shp-txt'>Shipping Type: {data.shipType}</p>

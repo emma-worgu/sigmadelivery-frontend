@@ -22,7 +22,7 @@ const HomeLogic = () => {
       return setMessage('Tracking Number is Required!!');
     }
 
-    const url = 'https://sigmadelivery.herokuapp.com/track/';
+    const url = 'https://sigmadelivery.herokuapp.com/admin/id-info/';
     const data = {
       trackNumber,
     };
@@ -40,7 +40,7 @@ const HomeLogic = () => {
     const doc = await response.json();
     if (response.status === 200) {
       setLoading(false);
-      localStorage.setItem('doc', JSON.stringify(doc));
+      sessionStorage.setItem('doc', JSON.stringify(doc));
       history.push('/track');
     } else {
       setLoading(false);

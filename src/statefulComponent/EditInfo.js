@@ -41,6 +41,8 @@ const EditInfo = () => {
   const[pickupDate, setPickupDate] = useState(data.pickupDate);
   const[pickupTime, setPickupTime] = useState(data.pickupTime);
   const[comment, setComment] = useState(data.comment);
+  const[currDest, setCurrDest] = useState('');
+  const[wght, setWght] = useState('');
 
   const onShipperName = (e) => {
     setShipperName(e.target.value);
@@ -118,6 +120,14 @@ const EditInfo = () => {
   };
   const onComment = (e) => {
     setComment(e.target.value);
+    e.preventDefault();
+  };
+  const onCurrDest = (e) => {
+    setCurrDest(e.target.value);
+    e.preventDefault();
+  };
+  const onWght = (e) => {
+    setWght(e.target.value);
     e.preventDefault();
   };
 
@@ -227,6 +237,10 @@ const EditInfo = () => {
         onPickupTime={onPickupTime}
         onComment={onComment}
         onSubmit={onSubmit}
+        currDest={currDest}
+        wght={wght}
+        onCurrDest={onCurrDest}
+        onWght={onWght}
       />
       <Footer />
     </div>

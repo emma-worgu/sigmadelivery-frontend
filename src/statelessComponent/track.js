@@ -71,6 +71,7 @@ const Track = () => {
             </div>
             <p className='shp-txt'>Origin: {data.origin}</p>
             <p className='shp-txt'>Destination: {data.dest}</p>
+            <p className='shp-txt'>Current Destination: {data.comment}</p>
             <p className='shp-txt'>Status: {data.shipStatus}</p>
             <p className='shp-txt'>Package Type: {data.packageType}</p>
             <p className='shp-txt'>Shipping Type: {data.shipType}</p>
@@ -81,6 +82,7 @@ const Track = () => {
             <p className='shp-txt'>Pick-Up Date: {new Date(data.pickupDate).toLocaleDateString('en-US', options)}</p>
             <p className='shp-txt'>Pick-Up Time: {data.pickupTime}</p>
             <p className='shp-txt'>Comment: {data.comment}</p>
+            <p className='shp-txt'>Weight: {data.comment}</p>
           </div>
           </div>
       </div>

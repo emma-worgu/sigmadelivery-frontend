@@ -32,6 +32,8 @@ const Dashboard = () => {
   const[pickupDate, setPickupDate] = useState('');
   const[pickupTime, setPickupTime] = useState('');
   const[comment, setComment] = useState('');
+  const[currDest, setCurrDest] = useState('');
+  const[wght, setWght] = useState('');
 
   const onShipperName = (e) => {
     setShipperName(e.target.value);
@@ -112,6 +114,14 @@ const Dashboard = () => {
     setComment(e.target.value);
     e.preventDefault();
   };
+  const onCurrDest = (e) => {
+    setCurrDest(e.target.value);
+    e.preventDefault();
+  };
+  const onWght = (e) => {
+    setWght(e.target.value);
+    e.preventDefault();
+  };
 
   const onSubmit = async () => {
     setMessage({
@@ -138,6 +148,8 @@ const Dashboard = () => {
       pickupDate,
       pickupTime,
       comment,
+      currDest,
+      wght,
     };
 
     const url = 'https://sigmadelivery.herokuapp.com/admin/add';
@@ -217,6 +229,10 @@ const Dashboard = () => {
         onPickupTime={onPickupTime}
         onComment={onComment}
         onSubmit={onSubmit}
+        currDest={currDest}
+        wght={wght}
+        onCurrDest={onCurrDest}
+        onWght={onWght}
       />
       <Footer />
     </div>

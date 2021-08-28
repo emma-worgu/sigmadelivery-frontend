@@ -70,6 +70,14 @@ const Dashboard = (props) => {
             <input type='text' className='gen-in' value={props.dest} onChange={props.onDest} />
           </div>
           <div className='gen-in-div'>
+            <label className='gen-label'>Current Destination</label>
+            <input type='text' className='gen-in' value={props.currDest} onChange={props.onCurrDest} />
+          </div>
+          <div className='gen-in-div'>
+            <label className='gen-label'>Weight</label>
+            <input type='text' className='gen-in' value={props.wght} onChange={props.onWght} />
+          </div>
+          <div className='gen-in-div'>
             <label className='gen-label'>Shipment Status</label>
             <select className='gen-in' value={props.shipStatus} onChange={props.onShipStatus} >
               <option value='transit'>In Transit</option>

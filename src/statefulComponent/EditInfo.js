@@ -41,8 +41,8 @@ const EditInfo = () => {
   const[pickupDate, setPickupDate] = useState(data.pickupDate);
   const[pickupTime, setPickupTime] = useState(data.pickupTime);
   const[comment, setComment] = useState(data.comment);
-  const[currDest, setCurrDest] = useState('');
-  const[wght, setWght] = useState('');
+  const[currDest, setCurrDest] = useState(data.currDest);
+  const[wght, setWght] = useState(data.wght);
 
   const onShipperName = (e) => {
     setShipperName(e.target.value);

@@ -1,0 +1,44 @@
+.login-div {
+  display: block;
+  margin-top: 15%;
+  margin-left: 35%;
+  margin-right: 12%;
+  width: 50%;
+  /* margin-left: 30%; */
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.em-in {
+  width: 50%;
+  height: 2em;
+}
+
+.input-div {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.lg-bt {
+  width: 30%;
+  height: 2rem;
+  background-color: aqua;
+  border: none;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 780px) {
+  .login-div {
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+
+  .em-in {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

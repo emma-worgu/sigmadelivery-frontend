@@ -1,0 +1,50 @@
+.gen-body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.gen-div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.gen-in-div {
+  display: grid;
+  grid-template-columns: repeat(2, 10%,90%);
+  margin-bottom: 3em;
+  margin-right: 3em;
+}
+
+.gen-in {
+  width: 70%;
+  height: 2em;
+}
+
+.gen-text {
+  height: 5em;
+}
+
+.gen-label {
+  font-size: large;
+  font-weight: 500;
+}
+
+.gen-bt-div {
+  padding-bottom: 20px;
+}
+
+.gen-bt {
+  width: 20em;
+  height: 4em;
+  border: none;
+  background-color: aqua;
+}
+
+.gen-bt:hover {
+  background-color: blue;
+}
+
+.gen-hd-bt {
+  margin-bottom: 3em;
+  margin-top: 2em;
+}

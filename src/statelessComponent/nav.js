@@ -4,7 +4,16 @@ import '../css/nav.css';
 
 const Nav = () => {
   const url = document.location.pathname === '/' ? '#wwd-id' : '/#wwd-id';
-  const conUrl = document.location.pathname === '/contact' ? '#con-id' : '/contact/#con-id'
+  const conUrl = document.location.pathname === '/contact' ? '#con-id' : '/contact/#con-id';
+
+  let navButton;
+
+  if (document.location.pathname === '/dash' || document.location.pathname === '/editID') {
+    navButton = null
+  } else {
+    navButton = <a className="nav-a" href={conUrl}><button className="nav-bt"><b>GET QUOTE</b></button></a>
+  };
+
   return (
     <div>
       <div className="nav-section">
@@ -19,7 +28,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className="nav-mobile">
-          <a className="nav-a" href={conUrl}><button className="nav-bt"><b>GET QUOTE</b></button></a>
+          {navButton}
         </div>
       </div>
     </div>

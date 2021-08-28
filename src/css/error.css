@@ -1,0 +1,40 @@
+.err {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: 3px solid red;
+    z-index: 1;
+}
+
+.err-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.err-bt {
+  width: 30%;
+  margin: 10px;
+  height: 2em;
+}
+
+.err-p {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .err {
+    left: 30px;
+    right: 10px;
+    top: 55%;
+  }
+}

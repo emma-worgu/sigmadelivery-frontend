@@ -1,0 +1,33 @@
+.edit-body {
+  display: block;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.edit-in {
+  margin-left: 12px;
+}
+
+.txt-hd, .txt-p, .edit-label {
+  font-size: 30px;
+}
+
+.edit-in {
+  width: 15em;
+  height: 3em;
+}
+
+.edit-bt-div, .edit-bt {
+  width: 17em;
+  height: 3em;
+  margin-top: 2em;
+}
+
+.edit-bt {
+  background-color: aqua;
+  border: none;
+}
+
+.edit-bt:hover {
+  background-color: blue;
+}

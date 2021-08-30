@@ -22,7 +22,6 @@ const Track = () => {
     setData(parseDoc.data)
   };
 
-  console.log(data);
 
   useEffect(() => {
     renderFunc();

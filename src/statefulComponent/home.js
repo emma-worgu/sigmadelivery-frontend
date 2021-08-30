@@ -19,7 +19,7 @@ const HomeLogic = () => {
     setLoading(true);
     if (trackNumber === '') {
       setLoading(false);
-      return setMessage('Tracking Number is Required!!');
+      return alert('Tracking Number is Required!!');
     }
 
     const url = 'https://sigmadelivery.herokuapp.com/admin/id-info/';

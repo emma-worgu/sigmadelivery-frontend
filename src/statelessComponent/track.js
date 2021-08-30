@@ -27,8 +27,6 @@ const Track = () => {
     renderFunc();
   }, []);
 
-  console.log();
-
   return (
     <div>
       <Nav />

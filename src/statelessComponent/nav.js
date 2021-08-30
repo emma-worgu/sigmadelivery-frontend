@@ -18,7 +18,7 @@ const Nav = () => {
     <div>
       <div className="nav-section">
         <div className="logo">
-          <h3>SLADA TRANSPORT</h3>
+          <h3>SLADA</h3>
         </div>
         <div className="nav-link">
           <ul className="nav-ul">

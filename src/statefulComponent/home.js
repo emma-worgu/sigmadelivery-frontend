@@ -45,6 +45,7 @@ const HomeLogic = () => {
     } else {
       setLoading(false);
       setMessage(doc.message);
+      alert(doc.message);
     }
     
   };

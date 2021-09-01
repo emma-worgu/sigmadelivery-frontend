@@ -24,7 +24,9 @@ const EditTrackID = () => {
       loading: true,
     });
 
-    const url = 'https://sigmadelivery.herokuapp.com/admin/id-info';
+    const pathName = document.location.hostname === 'localhost' ? 'http://localhost:5000': 'https://sigmadelivery.herokuapp.com';
+
+    const url = `${pathName}/admin/id-info`;
     const data = {
       trackNumber,
     };

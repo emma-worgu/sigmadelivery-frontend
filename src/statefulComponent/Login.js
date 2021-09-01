@@ -48,7 +48,13 @@ const MainLogin = () => {
       pass,
     }
 
-    const url = document.location.pathname === '/login' ? 'https://sigmadelivery.herokuapp.com/admin/login' : 'https://sigmadelivery.herokuapp.com/admin/register'
+    const pathName = document.location.hostname === 'localhost' ? 'http://localhost:5000': 'https://sigmadelivery.herokuapp.com';
+
+    console.log(pathName);
+
+    const url = document.location.pathname === '/login' ? `${pathName}/admin/login`: `${pathName}/admin/register`;
+
+    console.log(url);
     const response = await fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),

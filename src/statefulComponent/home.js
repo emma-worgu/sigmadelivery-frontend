@@ -22,9 +22,7 @@ const HomeLogic = () => {
       return alert('Tracking Number is Required!!');
     }
 
-
-    const pathName = document.location.hostname === 'localhost' ? 'http://localhost:5000': 'https://sigmadelivery.herokuapp.com';
-    const url = `${pathName}/admin/id-info/`;
+    const url = 'https://sigmadelivery.herokuapp.com/admin/id-info/';
     const data = {
       trackNumber,
     };

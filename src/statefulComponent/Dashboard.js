@@ -152,10 +152,7 @@ const Dashboard = () => {
       wght,
     };
 
-    const pathName = document.location.hostname === 'localhost' ? 'http://localhost:5000': 'https://sigmadelivery.herokuapp.com';
-
-    const url = `${pathName}/admin/add`;
-    
+    const url = 'https://sigmadelivery.herokuapp.com/admin/add';
     const token = sessionStorage.getItem('token');
     const parseToken = JSON.parse(token);
     const req = await fetch(url, {

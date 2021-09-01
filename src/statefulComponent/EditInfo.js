@@ -124,12 +124,16 @@ const EditInfo = () => {
   };
   const onCurrDest = (e) => {
     setCurrDest(e.target.value);
+    console.log(currDest);
     e.preventDefault();
   };
   const onWght = (e) => {
     setWght(e.target.value);
+    console.log(wght);
     e.preventDefault();
   };
+
+  console.log(wght);
 
   const onSubmit = async () => {
     setMessage({
@@ -156,6 +160,8 @@ const EditInfo = () => {
       pickupDate,
       pickupTime,
       comment,
+      currDest,
+      wght,
       trackNumber: data.trackNumber,
     };
 

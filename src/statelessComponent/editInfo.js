@@ -15,6 +15,8 @@ const EditInfo = (props) => {
     const onSubmit = () => {
       history.push('/dash');
     };
+
+    console.log(props.wght);
     return (
       <div className='gen-body'>
         <div className='gen-hd-div'>

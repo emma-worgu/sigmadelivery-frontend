@@ -70,6 +70,7 @@ const MainLogin = () => {
       console.log(data);
       const stringifyToken = JSON.stringify(data.token);
       sessionStorage.setItem('token', stringifyToken);
+      localStorage.setItem('admin', true);
       setMessage({
         loading: false,
       });

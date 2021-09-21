@@ -37,7 +37,7 @@ function App() {
     onlineStatus();
   }, []);
 
-  if (data === true && date > now) {
+  if (data === true && date < now) {
     return (
       <Router>
         <Switch>

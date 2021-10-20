@@ -8,8 +8,8 @@ function Flutterwave() {
   const config = {
     public_key: 'FLWPUBK-12312993f6d2b838c0c92154e059f86f-X',
     tx_ref: `slada-${Date.now()}${Math.floor(Math.random() * 1000000)}-X`,
-    amount: 20000,
-    currency: 'NGN',
+    amount: 40,
+    currency: 'USD',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
       email: 'sladavictor@gmail.com',

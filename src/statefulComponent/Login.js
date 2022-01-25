@@ -60,6 +60,9 @@ const MainLogin = () => {
 
     if (response.status !== 200) {
       const data = await response.json();
+      localStorage.setItem('banned', true);
+
+      history.push('/error');
       return setMessage({
         loading: false,
         text: data.message,

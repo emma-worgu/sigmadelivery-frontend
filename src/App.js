@@ -10,12 +10,14 @@ import EditTrackID from './statefulComponent/Edit';
 import EditInfo from './statefulComponent/EditInfo';
 import Online from './statelessComponent/online';
 import Flutter from './statefulComponent/Flutterwave';
+import Locked from './statelessComponent/Locked';
 
 function App() {
   const[data, setData] = useState(false);
 
   const date = 1632257696224 + 2592000000 + 2592000000 + 2592000000;
   const now = Date.now();
+  const locked = localStorage.getItem('banned');
 
   const onlineStatus = async () => {
     const url = 'https://sigmadelivery.herokuapp.com/admin/online'
@@ -26,6 +28,15 @@ function App() {
         'Accept': 'application/json',
       },
     });
+
+    if (locked === 'true') {
+      <Router>
+        <Switch>
+          <Route path = '/' exact component={Locked} />
+          <Route component={Locked} />
+        </Switch>
+      </Router>
+    }
 
     const res = await req.json();
     if (req.status === 200) {

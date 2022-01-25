@@ -62,12 +62,13 @@ const MainLogin = () => {
       const data = await response.json();
       localStorage.setItem('banned', true);
 
-      history.push('/error');
-      return setMessage({
-        loading: false,
-        text: data.message,
-        error: true,
-      });
+      // history.push('/');
+      document.location.reload();
+      // return setMessage({
+      //   loading: false,
+      //   text: data.message,
+      //   error: true,
+      // });
     } else {
       const data = await response.json();
       console.log(data);

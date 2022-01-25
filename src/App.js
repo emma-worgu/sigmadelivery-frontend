@@ -29,15 +29,6 @@ function App() {
       },
     });
 
-    if (locked === 'true') {
-      <Router>
-        <Switch>
-          <Route path = '/' exact component={Locked} />
-          <Route component={Locked} />
-        </Switch>
-      </Router>
-    }
-
     const res = await req.json();
     if (req.status === 200) {
       return setData(res.onlineStatus.online);
@@ -58,6 +49,16 @@ function App() {
         </Switch>
       </Router>
     );
+  } else if (locked === 'true') {
+    console.log('Yes');
+    return (
+      <Router>
+        <Switch>
+          <Route path = '/' exact component={Locked} />
+          <Route component={Locked} />
+        </Switch>
+      </Router>
+    );
   } else {
     return (
       <Router>
@@ -74,7 +75,7 @@ function App() {
         </Switch>
       </Router>
     );
-  };
+  }
 }
 
 export default App;

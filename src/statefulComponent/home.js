@@ -22,7 +22,7 @@ const HomeLogic = () => {
       return alert('Tracking Number is Required!!');
     }
 
-    const url = 'https://sigmadelivery.herokuapp.com/admin/id-info/';
+    const url = 'https://slada.onrender.com/admin/id-info/';
     const data = {
       trackNumber,
     };

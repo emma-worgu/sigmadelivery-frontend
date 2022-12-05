@@ -152,7 +152,7 @@ const Dashboard = () => {
       wght,
     };
 
-    const url = 'https://sigmadelivery.herokuapp.com/admin/add';
+    const url = 'https://slada.onrender.com/admin/add';
     const token = sessionStorage.getItem('token');
     const parseToken = JSON.parse(token);
     const req = await fetch(url, {

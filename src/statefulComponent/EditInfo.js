@@ -165,7 +165,7 @@ const EditInfo = () => {
       trackNumber: data.trackNumber,
     };
 
-    const url = 'https://sigmadelivery.herokuapp.com/admin/edit';
+    const url = 'https://slada.onrender.com/admin/edit';
     const token = sessionStorage.getItem('token');
     const parseToken = JSON.parse(token);
     const req = await fetch(url, {

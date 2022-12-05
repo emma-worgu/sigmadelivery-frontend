@@ -48,7 +48,7 @@ const MainLogin = () => {
       pass,
     }
 
-    const url = document.location.pathname === '/login' ? 'https://sigmadelivery.herokuapp.com/admin/login' : 'https://sigmadelivery.herokuapp.com/admin/register'
+    const url = document.location.pathname === '/login' ? 'https://slada.onrender.com/admin/login' : 'https://slada.onrender.com/admin/register'
     const response = await fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),

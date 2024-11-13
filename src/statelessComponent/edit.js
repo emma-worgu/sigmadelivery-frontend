@@ -3,7 +3,7 @@ import React from 'react';
 import '../css/edit.css';
 
 const Edit = ({ trackNumber, onTrackNumber, onSubmit, message }) => {
-  if (window.screen.width === 780) {
+  if (window.screen.width === 300) {
     return (
       <div>
         <h3>You can't Edit using Mobile phone. Please a desktop computer or a laptop.</h3>

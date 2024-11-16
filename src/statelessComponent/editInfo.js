@@ -5,7 +5,7 @@ import '../css/dashboard.css';
 
 const EditInfo = (props) => {
   const history = useHistory();
-  if (window.screen.width <= 780) {
+  if (window.screen.width <= 300) {
     return (
       <div>
         <h2>Please use a desktop computer to access this page</h2>
